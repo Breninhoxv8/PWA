@@ -1,3 +1,4 @@
+// service-worker.js
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("tarefas-cache").then(cache => {
