@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Viagem dos Sonhos</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0077cc, #005fa3);
+      color: #fff;
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .banner h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 2rem;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #005fa3;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* Missão, visão e valores */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    /* Equipe */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .member {
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .member img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .member h4 {
+      margin: 10px 0 5px;
+      color: #0077cc;
+    }
+
+    footer {
+      background: #0077cc;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .banner h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Viagem dos Sonhos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="about.html" class="active">Sobre</a>
+      <a href="services.html">Serviços</a>
+      <a href="contact.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Sobre Nós</h1>
+  </div>
+
+  <!-- História -->
+  <main>
+    <section>
+      <h2>Nossa História</h2>
+      <p>
+        A <strong>Viagem dos Sonhos</strong> nasceu com o propósito de transformar cada viagem em uma experiência inesquecível. 
+        Desde 2010, ajudamos milhares de clientes a explorar o mundo com conforto, segurança e preços acessíveis. 
+        Acreditamos que viajar é mais do que conhecer lugares: é criar memórias para a vida inteira.
+      </p>
+    </section>
+
+    <!-- Missão, visão e valores -->
+    <section>
+      <h2>Missão, Visão e Valores</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Missão</h3>
+          <p>Oferecer experiências de viagem personalizadas, proporcionando momentos únicos a cada cliente.</p>
+        </div>
+        <div class="card">
+          <h3>Visão</h3>
+          <p>Ser referência no setor de turismo, conectando pessoas e culturas em todos os cantos do mundo.</p>
+        </div>
+        <div class="card">
+          <h3>Valores</h3>
+          <p>Compromisso, excelência no atendimento, ética, inovação e respeito à diversidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section>
+      <h2>Nosso Time</h2>
+      <div class="team">
+        <div class="member">
+          <img src="https://images.unsplash.com/photo-1603415526960-f7e0328f8f49?auto=format&fit=crop&w=500&q=80" alt="Diretor">
+          <h4>João Silva</h4>
+          <p>Diretor Executivo</p>
+        </div>
+        <div class="member">
+          <img src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?auto=format&fit=crop&w=500&q=80" alt="Gerente de Turismo">
+          <h4>Maria Oliveira</h4>
+          <p>Gerente de Turismo</p>
+        </div>
+        <div class="member">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=500&q=80" alt="Consultora de Viagens">
+          <h4>Ana Costa</h4>
+          <p>Consultora de Viagens</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Viagem dos Sonhos - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

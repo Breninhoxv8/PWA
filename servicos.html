@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Viagem dos Sonhos</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0077cc, #005fa3);
+      color: #fff;
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #005fa3;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-card .content {
+      padding: 20px;
+    }
+
+    .service-card h3 {
+      margin: 0 0 10px;
+      color: #0077cc;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .service-card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .service-card a:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      background: #0077cc;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Viagem dos Sonhos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="about.html">Sobre</a>
+      <a href="services.html" class="active">Serviços</a>
+      <a href="contact.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <h2>Nossos Serviços</h2>
+    <div class="services-container">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Pacotes de Viagem">
+        <div class="content">
+          <h3>Pacotes de Viagem</h3>
+          <p>Explore destinos incríveis com pacotes completos, incluindo passagens, hospedagem e experiências únicas.</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=1200&q=80" alt="Passagens Aéreas">
+        <div class="content">
+          <h3>Passagens Aéreas</h3>
+          <p>As melhores tarifas para voos nacionais e internacionais, com parcelamento facilitado e promoções exclusivas.</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" alt="Hospedagem">
+        <div class="content">
+          <h3>Hospedagem</h3>
+          <p>Hotéis, resorts e pousadas para todos os estilos de viagem, do luxo ao econômico.</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Passeios e Experiências">
+        <div class="content">
+          <h3>Passeios e Experiências</h3>
+          <p>Torne sua viagem memorável com passeios guiados, ingressos e aventuras personalizadas.</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Viagem dos Sonhos - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

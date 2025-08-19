@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Viagem dos Sonhos</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #0077cc;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #0077cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #005fa3;
+    }
+
+    .map iframe {
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .social ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social li {
+      margin: 5px 0;
+    }
+
+    footer {
+      background: #0077cc;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+
+      .map iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Viagem dos Sonhos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="about.html">Sobre</a>
+      <a href="contact.html" class="active">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Seção de Contato -->
+  <main>
+    <section class="contact">
+      <h2>Fale Conosco</h2>
+      <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais rápido possível.</p>
+
+      <!-- Formulário -->
+      <form action="#" method="post" class="contact-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Mapa (Google Maps embed) -->
+    <section class="map">
+      <h2>Nosso Endereço</h2>
+      <p>Av. das Palmeiras, 123 - São Paulo/SP</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7898124923513!2d-46.655981685020056!3d-23.58010346828968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c42f63c5c7%3A0xbac8c9b75b9b25aa!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622838472763!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Redes sociais -->
+    <section class="social">
+      <h2>Redes Sociais</h2>
+      <p>Siga-nos para ficar por dentro das novidades e promoções:</p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Viagem dos Sonhos - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
